@@ -1,0 +1,9 @@
+.\" man for simple_shell. 
+.TH simple_shell "9 April 2022" "simple_shell man page"
+
+.SH COPYRIGHT
+
+.SH AUTHORS
+B. Diana Marcela Banguera "4699@holbertonschool.com"
+.br 
+.B Santiago Zapata Alvarez "4720@holbertonschool.com"
