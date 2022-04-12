@@ -28,4 +28,14 @@ int main(char *in)
 			break;
 		}
 	}
+	tkn = strtok(bf, delim);
+
+	while (tkn != NULL)
+	{
+		printf("The tkn %i is %s\n", count, tkn);
+		tkn = strtok(0, delim);
+		count++;
+	}
+	free(bf);
+	return (0);
 }
