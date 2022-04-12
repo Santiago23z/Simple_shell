@@ -10,5 +10,7 @@
 #include <sys/wait.h>
 #include <limits.h>
 
+int strlen_(char *str);
+int strcmmp_(char *str1, char *str2);
 
 #endif
