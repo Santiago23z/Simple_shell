@@ -12,5 +12,7 @@
 
 int strlen_(char *str);
 int strcmmp_(char *str1, char *str2);
+int exit(void);
+int builtins(char **listbuiltin);
 
 #endif
