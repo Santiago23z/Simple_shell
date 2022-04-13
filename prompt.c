@@ -8,7 +8,8 @@
 int main(char *in)
 {
 	char *bf, *tkn;
-	size_t bfsize, letters;
+	size_t bfsize;
+	size_t letters; 
 	int count = 0;
 	char delim[2] = " ";
 

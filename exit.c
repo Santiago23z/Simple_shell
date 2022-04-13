@@ -4,7 +4,7 @@
  * exit - exit
  * Return: Always 0
  */
-int exit(void)
+int sh_exit(void)
 {
 	return (0);
 }
