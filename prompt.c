@@ -5,38 +5,28 @@
  * Return: 0 if is succesfull, -1 if is failure
  *
  */
-int main(char *in)
+char *prompt(void)
 {
-	char *bf, *tkn;
-	size_t bfsize;
-	size_t letters; 
-	int count = 0;
-	char delim[2] = " ";
+	char *l = NULL;
+	size_t size = 0;
+	int index = 0;
 
-	bf = malloc(sizeof(char) *bfsize);
-	if (bf == NULL)
-	{
-		return (-1);
-	}
+	if (isatty(STDIN_FILENO) == 0)
+		return (NULL);
+	write(1, "My_prompt$ ", 11);
+	l = malloc(sizeof(char) * BUFF_sz);
+	index = getline(&l, &size, stdin);
 
-	while (count == 0)
+	if (l == NULL)
 	{
-		printf("$ ");
-		letters = getline(&bf, &bfsize, stdin);
-		if (letters != -1)
-		{
-			printf("%s\n", bf);
-			break;
-		}
+		perror("malloc");
+		free(l);
+		exit(EXIT_FAILURE);
 	}
-	tkn = strtok(bf, delim);
-
-	while (tkn != NULL)
+	if (index == -1)
 	{
-		printf("The tkn %i is %s\n", count, tkn);
-		tkn = strtok(0, delim);
-		count++;
+		free(l);
+		return (NULL);
 	}
-	free(bf);
-	return (0);
+	return (l);
 }
