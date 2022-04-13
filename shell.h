@@ -10,9 +10,15 @@
 #include <sys/wait.h>
 #include <limits.h>
 
+#define BUFF_sz 1024
+#define delim " \t\n"
+
+extern char sh_environ;
+
 int strlen_(char *str);
 int strcmmp_(char *str1, char *str2);
 int sh_exit(void);
 int builtins(char **listbuiltin);
+char *prompt(void);
 
 #endif
