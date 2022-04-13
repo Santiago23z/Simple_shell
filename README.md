@@ -3,6 +3,9 @@
 ## We are a couple from the 17th cohort, Holberton, Medellin, Colombia.
 
 # Purpose 🫡
+
+Write a simple UNIX command interpreter.
+
 # Requirements 📚
 
 - Allowed editors: vi, vim, emacs
