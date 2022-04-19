@@ -15,3 +15,16 @@ int builtins(char **listbuiltin)
 
 	return (list / character);
 }
+
+int sh_enviroment(void)
+{
+	int envi = 0;
+
+	while (environ[envi])
+	{
+		write(STDOUT_FILENO, environ[envi], strlen(environ[envi]));
+		write(STDOUT_FILENO, "\n", 1);
+		envi++;
+	}
+	return (0);
+}
