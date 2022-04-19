@@ -20,5 +20,7 @@ int strcmmp_(char *str1, char *str2);
 int sh_exit(void);
 int builtins(char **listbuiltin);
 char *prompt(void);
-
+char **tkn(char *str, char *lim);
+int contador(char *str);
+void libres_tkn(char **tkn);
 #endif

@@ -60,7 +60,7 @@ Write a simple UNIX command interpreter.
 
 - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
-# Authors
+# Authors :)
 
 ***Marce Banguera*** @DMarceliita <a href="https://twitter.com/DMarceliita" rel= "nofollow"> <img width="18px" align="center"
 src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/twitter.svg" style="max-width: 100%;"> <a href="https://github.com/dianabanguera"> <img width="18px" align="center" src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg" style="max-width: 100%;"></a>
