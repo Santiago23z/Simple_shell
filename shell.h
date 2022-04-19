@@ -13,14 +13,24 @@
 #define BUFF_sz 1024
 #define delim " \t\n"
 
-extern char sh_environ;
+extern char **environ;
+
+typedef struct shell_built
+{
+	char *var;
+	int (*f)();
+} sbuilt_t;
 
 int strlen_(char *str);
 int strcmmp_(char *str1, char *str2);
 int sh_exit(void);
 int builtins(char **listbuiltin);
+int sh_enviroment(void);
 char *prompt(void);
 char **tkn(char *str, char *lim);
 int contador(char *str);
 void libres_tkn(char **tkn);
+int (*get_shell_function(char *sh))(void);
+
+
 #endif
