@@ -6,7 +6,7 @@ char **tkn(char *str, char *lim)
     int wrd = contador(str), i = 1;
 
     cmd = malloc(sizeof(char *) * (wrd + 1));
-    if (!cmd)
+    if (cmd == NULL)
     {
         perror("Failing memory");
         return (NULL);
@@ -14,7 +14,6 @@ char **tkn(char *str, char *lim)
     cmd[0] = strtok(str, lim);
     if (cmd[0] == NULL)
     {
-        tknlibre(cmd);
         return (NULL);
     }
     while (i < (wrd + 1))
