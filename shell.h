@@ -23,9 +23,9 @@ typedef struct shell_built
 
 int strlen_(char *str);
 int strcmmp_(char *str1, char *str2);
-int sh_exit(void);
+int shel_exit(void);
 int builtins(char **listbuiltin);
-int sh_enviroment(void);
+int shell_enviroment(void);
 char *prompt(void);
 char **tkn(char *str, char *lim);
 int contador(char *str);
