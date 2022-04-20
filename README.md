@@ -56,9 +56,24 @@ Write a simple UNIX command interpreter.
 - wait4 (man 2 wait4)
 - write (man 2 write)
 
-# Compilation 
+# How to install this shell version 👇
+
+ 1. Clone the repository into your machine: **git clone https://github.com/Santiago23z/Simple_shell.git**
+ 2. Get into the directory in the repository: **cd Simple_shell**
+ 3. Compile the shell with the command: **gcc -Wall -Werror -Wextra -pedantic *.c -o hsh**
+ 4. Run the shell in interactive mode: **./hsh**
+ 5. Or run the shell in non-interactive mode: **echo "ls" | ./hsh**
+
+# Compilation 🤞
 
 - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+
+## Builtins included 👌
+
+- env
+- exit
+- ctrl + D
+- ls
 
 # Authors :)
 
