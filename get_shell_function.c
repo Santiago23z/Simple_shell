@@ -2,7 +2,7 @@
 
 /**
  * get_shell_function - get function
- * @sh: variable
+ * @s: variable
  * Return: Null
  */
 int (*get_shell_function(char *s))(void)

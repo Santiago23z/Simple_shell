@@ -16,6 +16,11 @@ int builtins(char **listbuiltin)
 	return (list / character);
 }
 
+/**
+ * shell_enviroment - the environ function
+ * Return: 0
+ *
+ */
 int shell_enviroment(void)
 {
 	int envi = 0;

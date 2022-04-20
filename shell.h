@@ -15,6 +15,11 @@
 
 extern char **environ;
 
+/**
+ * struct shell_built - the structure
+ * @var: variable
+ * @f: function associate
+ */
 typedef struct shell_built
 {
 	char *var;

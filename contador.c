@@ -1,20 +1,25 @@
 #include "shell.h"
 
-int contador(char *str)
+/**
+ * contador - function that counts
+ * @st: string to be analize
+ * Return: integer
+ */
+int contador(char *st)
 {
-    int linea = 0;
-    unsigned int entero = 0;
-    while (*str)
-    {
-        if(*str == ' ' || *str == '=' || *str == ':' || *str == '\n' || *str == '\t')
-        linea = 0;
+	int linea = 0;
+	unsigned int entero = 0;
 
-        else if (linea == 0)
-        {
-            linea = 1;
-            ++entero;
-        }
-        ++str;
-    }
-    return (entero);
+	while (*st)
+	{
+		if (*st == ' ' || *st == '=' || *st == ':' || *st == '\n' || *st == '\t')
+			linea = 0;
+		else if (linea == 0)
+		{
+			linea = 1;
+			++entero;
+		}
+		++st;
+	}
+	return (entero);
 }

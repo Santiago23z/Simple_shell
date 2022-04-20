@@ -1,6 +1,7 @@
 #include "shell.h"
 
-/** main - this is main function
+/**
+ * main - this is main function
  * Return: int
  */
 int main(void)

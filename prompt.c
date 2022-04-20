@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * main - prompt function
+ * prompt - prompt function
  * Return: 0 if is succesfull, -1 if is failure
  *
  */

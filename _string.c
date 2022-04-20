@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
 * strcmmp_ - Strings compare
 * @str1: string 1
@@ -7,19 +8,19 @@
 */
 int strcmmp_(char *str1, char *str2)
 {
-    while ((*str1 != '\0' && *str2 != '\0') && *str1 == *str2)
-    {
-        str1++;
-        str2++;
-    }
-    if (*str1 == *str2)
-    {
-        return (0);
-    }
-    else
-    {
-        return (*str1 - *str2);
-    }
+	while ((*str1 != '\0' && *str2 != '\0') && *str1 == *str2)
+	{
+		str1++;
+		str2++;
+	}
+	if (*str1 == *str2)
+	{
+		return (0);
+	}
+	else
+	{
+		return (*str1 - *str2);
+	}
 }
 
 /**
@@ -29,11 +30,11 @@ int strcmmp_(char *str1, char *str2)
  */
 int strlen_(char *str)
 {
-    int x;
+	int x;
 
-    for (x = 0; str[x] != '\0'; x++)
-    {
-        ;
-    }
-    return (x);
-} 
+	for (x = 0; str[x] != '\0'; x++)
+	{
+		;
+	}
+	return (x);
+}
