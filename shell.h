@@ -36,6 +36,6 @@ char **tkn(char *str, char *lim);
 int contador(char *str);
 void libres_tkn(char **tkn);
 int (*get_shell_function(char *sh))(void);
-
+char *path_ruta(char *pth);
 
 #endif
