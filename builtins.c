@@ -16,7 +16,7 @@ int builtins(char **listbuiltin)
 	return (list / character);
 }
 
-int sh_enviroment(void)
+int shell_enviroment(void)
 {
 	int envi = 0;
 
