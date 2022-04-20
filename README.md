@@ -69,10 +69,10 @@ Write a simple UNIX command interpreter.
 - gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
 # non-interactive mode🦾
-![link](https://imgur.com/7f75e690-66ba-4c8e-b021-63a7065226f1)
+![link](https://i.imgur.com/jCCoa9I.png)
 
 # interactive mode
-! [link](https://i.imgur.com/BOKvmGZ.png)
+![link](https://i.imgur.com/LulXqew.png)
 
 ## Builtins included 👌
 
