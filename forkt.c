@@ -25,7 +25,7 @@ int forkt(char *path, char **opcion)
 	else
 	{
 		wait(&status);
-		free(opcion);
+		free(path);
 	}
 	return (1);
 }
