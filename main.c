@@ -35,15 +35,23 @@ int main(void)
 		if (stat(save[0], &bm) == 0)
 		{
 			new_path = strdup(save[0]);
-			forkt(new_path, save);
-            free(save[0]);
 		}
 		else
 		{
 			new_path = path_ruta(save);
-			if (new_path != NULL)
-			forkt(new_path, save);
+			if (new_path == NULL)
+            {
+            perror("Error path");
+            free(new_path);
+            free(save);
+            continue;
+            }
 		}
+        if (new_path != NULL)
+        {
+        forkt(new_path, save);
+        }
+        
 	}
 	return (0);
 }
