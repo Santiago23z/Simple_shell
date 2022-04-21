@@ -5,8 +5,8 @@
  */
 int main(void)
 {
-	char *line, *new_path, **save;
-	int (*function)();
+	char *line = NULL, *new_path = NULL, **save = NULL;
+	int (*function)() = 0;
 	struct stat bm;
 
 	while (1)
@@ -50,9 +50,8 @@ int main(void)
         if (new_path != NULL)
         {
         forkt(new_path, save);
-        free(new_path);
         }
-        
+        free(line);
 	}
 	return (0);
 }
