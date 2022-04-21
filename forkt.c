@@ -1,7 +1,9 @@
 #include "shell.h"
 
 /**
- * main - this is main function
+ * forkt - function that creates a son
+ * @path: rut
+ * @opcion: pointer to a variable
  * Return: int
  */
 
@@ -22,7 +24,7 @@ int forkt(char *path, char **opcion)
 	}
 	else
 	{
-		wait (&status);
+		wait(&status);
 		libres_tkn(opcion);
 		free(path);
 	}

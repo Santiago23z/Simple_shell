@@ -40,8 +40,8 @@ int strlen_(char *str)
 }
 
 /**
- * _strdup - duplicate
- * @s; string to be duplicated
+ * _stdup - duplicate
+ * @s: string to be duplicated
  * Return: pomiter a string
  */
 char *_stdup(char *s)
@@ -65,11 +65,11 @@ char *_stdup(char *s)
 		dup[i] = s[i];
 	}
 	dup[i] = '\0';
-	return (dup);	
+	return (dup);
 }
 
 /**
- * _strcat - concatenates 
+ * _strcat - concatenates
  * @dest: input
  * @src: input
  * Return: dest
