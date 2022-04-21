@@ -24,13 +24,15 @@
 	    continue;
     }
     function = get_shell_function(save[0]);
-    if (function() == 0)
+    if (function != NULL)
     {
-    continue;
-    }
+    free(save);
     if (function() == 1)
     {
+    free(line);
     exit(EXIT_SUCCESS);
+    }
+    continue;
     }
     if (stat(save[0], &bm) == 0)
     {
