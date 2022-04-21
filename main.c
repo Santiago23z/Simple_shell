@@ -14,7 +14,15 @@
     while (1)
     {
     line = prompt();
+    if (line == NULL)
+    {
+	    exit(EXIT_SUCCESS);
+    }
     save = tkn(line, " \n\t");
+    if (save == NULL)
+    {
+	    continue;
+    }
     function = get_shell_function(save[0]);
     if (function() == 0)
     {

@@ -27,6 +27,5 @@ while (i < (wrd + 1))
 cmd[i] = strtok(NULL, lim);
 i++;
 }
-free(cmd);
 return (cmd);
 }
