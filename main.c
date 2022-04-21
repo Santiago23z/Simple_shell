@@ -36,7 +36,8 @@
     }
     if (stat(save[0], &bm) == 0)
     {
-    forkt(save[0], save);
+    new_path = strdup(save[0]);
+    forkt(new_path, save);
     }
     else
     {
