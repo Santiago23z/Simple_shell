@@ -1,9 +1,64 @@
-.\" man for simple_shell. 
-.TH simple_shell "9 April 2022" "simple_shell man page"
+.\" Man for simple_shell. 
+.TH "Simple_shell" 1 "21 April 2022"  "1.0"  "simple_shell man page"
 
-.SH COPYRIGHT
+.SH NAME
+hsh - Simple Shell
+
+.SH SYNOPSIS
+hsh
+
+.SH DESCRIPTION
+This is our Simple Shell Project. This simple shell is a program that can be compiled and launched from the command line.
+
+.SH OVERVIEW
+Reading from either the terminal or files, simple_shell interprets and executes commands.
+
+.SH INVOCATION
+Compile simple_shell with the GNU Compiler Collection, preferably using gcc plus the below specified flags.
+.P
+.RS
+.B $ gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+.P
+.RE
+simple_shell can be run in interactive mode by entering the below command on the command line followd by "enter." Note that the prompt ('$') will appear and you will then be in interactive mode and able to enter commands followed by "enter." 
+.P
+.RS
+.B $ ./hsh
+.P
+.RE
+simple_shell can be run in non-interactive mode through the use of shell scripts. This can involve the use of piping ('|'):
+.P
+.RS
+.B echo "ls" | ./hsh
+
+.SH RETURN VALUE
+The shell returns the error code given by the last completed command followed by either ctrl-d or exit with no status code.
+
+.SH SYNTAXYS
+My_prompt$ <command> <flags> <arg1> <arg2> <arg3> ...
+
+.SH BUILTINS
+
+.SS exit
+- exit the shell
+
+.SS env
+- prints the current enviroment variables
+
+.SS
+EXAMPLES:
+1. My_prompt$ /bin/ls
+2. My_prompt$ ls
+3. My_prompt$ env  
+4. My_prompt$ exit
+
+.SH BUGS
+No bugs known
 
 .SH AUTHORS
 B. Diana Marcela Banguera "4699@holbertonschool.com"
 .br 
 .B Santiago Zapata Alvarez "4720@holbertonschool.com"
+
+.SH SEE ALSO
+sh
