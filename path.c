@@ -37,8 +37,8 @@ char *path_ruta(char **pth)
 		_strcat(rutnew, pth[0]);
 		if (stat(rutnew, &bm) == 0)
 		{
+            free(path_tkn);
 			free(rut);
-			free(path_tkn);
 			return (rutnew);
 		}
 		free(rutnew);

@@ -50,6 +50,7 @@ int main(void)
         if (new_path != NULL)
         {
         forkt(new_path, save);
+        free(new_path);
         }
         
 	}
