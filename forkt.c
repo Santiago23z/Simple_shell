@@ -13,12 +13,12 @@ int forkt(char *path, char **opcion)
 	son = fork();
 	if (son < 0)
 	{
-		perror("Fork error");
+		free(path);
 		return (-1);
 	}
 	if (son == 0)
 	{
-	execve(&path[0], opcion, NULL);
+	execve(path, opcion, NULL);
 	}
 	else
 	{

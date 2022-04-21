@@ -48,4 +48,3 @@ free(path_tkn);
 free(rut);
 return (NULL);
 }
-
