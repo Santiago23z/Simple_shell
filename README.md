@@ -1,4 +1,4 @@
-# Simple shell📝
+# Simple shell 
 
 ## We are a couple from the 17th cohort, Holberton, Medellin, Colombia.
 
@@ -85,8 +85,8 @@ Write a simple UNIX command interpreter.
 
 ***Marce Banguera*** @DMarceliita <a href="https://twitter.com/DMarceliita" rel= "nofollow"> <img width="18px" align="center"
 src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/twitter.svg" style="max-width: 100%;"> <a href="https://github.com/dianabanguera"> <img width="18px" align="center" src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg" style="max-width: 100%;"></a>
- 
-***Santiago zapata*** @Santiag72319908 <a href="https://twitter.com/Santiag72319908" rel= "nofollow"> <img width="18px" align="center"
+
+***Santiago Zapata*** @Santiag72319908 <a href="https://twitter.com/Santiag72319908" rel= "nofollow"> <img width="18px" align="center"
 src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/twitter.svg" style="max-width: 100%;"> <a href="https://github.com/Santiago23z"> <img width="18px" align="center" src="https://raw.githubusercontent.com/rahulbanerjee26/githubAboutMeGenerator/main/icons/github.svg" style="max-width: 100%;"></a>
  
 
