@@ -4,28 +4,26 @@
  * main - this is main function
  * Return: int
  */
-int main(void)
+
+int forkt(char *path, char **opcion)
 {
 	pid_t son;
-	int s = WEXITSTATUS(son);
-	char *args[2];
+	int status = 0;
 
 	son = fork();
-	if (son > 0)
+	if (son < 0)
 	{
-		args[0] = "/bin/sh";
-		args[1] = NULL;
-		execve(args[0], args, NULL);
+		perror("Fork error");
+		return (-1);
 	}
-	else if (son == 1)
+	if (son == 0)
 	{
-		return (1);
+	execve(&path[0], opcion, NULL);
 	}
 	else
 	{
-		perror("fork");
-		exit(1);
-		return (s);
+		wait (&status);
+		free(opcion);
 	}
 	return (1);
 }

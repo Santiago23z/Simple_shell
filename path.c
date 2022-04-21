@@ -5,26 +5,47 @@
  * @pth: arguments
  * Return: *
  */
-char *path_ruta(char *pth)
+char *path_ruta(char **pth)
 {
-char *rut = NULL;
-int x = 0;
+char *rut = NULL, **path_tkn = NULL, *rutnew = NULL;
+int i = 0, x = 1, l1 = 0;
+struct stat bm;
 
-rut = malloc(sizeof(char) * BUFF_sz);
-if (rut == NULL)
+while (environ[i])
 {
-perror("failing malloc");
-exit(EXIT_FAILURE);
+    if (strncmp(environ[i], "PATH", 4) == 0)
+    {
+        rut = _stdup(environ[i]);
+        break;
+    }
+    i++;
 }
-while (pth[x] != '\0')
+if (!rut)
+return (NULL);
+path_tkn = tkn(rut, "=:");
+l1 = strlen_(pth[0]);
+while (path_tkn[x])
 {
-if (pth[x] == '/')
-{
-rut = pth;
-break;
+    rutnew = malloc(sizeof(char) * (strlen_(path_tkn[x]) + l1 + 2));
+    strcpy(rutnew, path_tkn[x]);
+    if (!rutnew)
+    {
+        printf("Error in the path\n");
+        return (NULL);
+    }
+    _strcat(rutnew, "/");
+    _strcat(rutnew, pth[0]);
+    if (stat(rutnew, &bm) == 0)
+    {
+        free(rut);
+        free(path_tkn);
+        return (rutnew);
+    }
+    free(rutnew);
+    x++;
 }
-x++;
-}
+free(path_tkn);
 free(rut);
-return (rut);
+return (NULL);
 }
+

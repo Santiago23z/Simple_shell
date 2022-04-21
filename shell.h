@@ -28,6 +28,8 @@ typedef struct shell_built
 
 int strlen_(char *str);
 int strcmmp_(char *str1, char *str2);
+char *_stdup(char *s);
+char *_strcat(char *dest, char *src);
 int shel_exit(void);
 int builtins(char **listbuiltin);
 int shell_enviroment(void);
@@ -36,6 +38,7 @@ char **tkn(char *str, char *lim);
 int contador(char *str);
 void libres_tkn(char **tkn);
 int (*get_shell_function(char *sh))(void);
-char *path_ruta(char *pth);
+char *path_ruta(char **pth);
+int forkt(char *path, char **opcion);
 
 #endif

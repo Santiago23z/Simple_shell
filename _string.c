@@ -38,3 +38,57 @@ int strlen_(char *str)
 	}
 	return (x);
 }
+
+/**
+ * _strdup - duplicate
+ * @s; string to be duplicated
+ * Return: pomiter a string
+ */
+char *_stdup(char *s)
+{
+	int i;
+	char *dup;
+	int len;
+
+	if (s == NULL)
+	{
+		return (NULL);
+	}
+	len = strlen_(s);
+	dup = malloc((sizeof(char) * len) + 1);
+	if (dup == NULL)
+	{
+		return (NULL);
+	}
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		dup[i] = s[i];
+	}
+	dup[i] = '\0';
+	return (dup);	
+}
+
+/**
+ * _strcat - concatenates 
+ * @dest: input
+ * @src: input
+ * Return: dest
+ */
+
+char *_strcat(char *dest, char *src)
+{
+	int i = 0;
+	int u = 0;
+	int j;
+
+	while (dest[i] != '\0')
+	i++;
+	while (src[u] != '\0')
+	u++;
+	for (j = 0; j <= u; j++)
+	{
+		dest[i] = src[j];
+		i++;
+	}
+	return (dest);
+}

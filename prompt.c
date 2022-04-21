@@ -11,6 +11,7 @@ char *prompt(void)
 	size_t size = 0;
 	int index = 0;
 
+
 	if (isatty(STDIN_FILENO) == 0)
 		return (NULL);
 	write(1, "My_prompt$ ", 11);
