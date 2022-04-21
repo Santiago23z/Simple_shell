@@ -20,13 +20,13 @@ int forkt(char *path, char **opcion)
 	}
 	if (son == 0)
 	{
-	execve(path, opcion, NULL);
+	execve(path, opcion, environ);
 	}
 	else
 	{
 		wait(&status);
-		free(path);
 		free(opcion);
+		free(path);
 	}
 	return (1);
 }

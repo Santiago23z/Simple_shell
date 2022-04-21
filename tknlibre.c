@@ -6,7 +6,7 @@
  */
 void libres_tkn(char **tkn)
 {
-	int idx = 0;
+	int idx = 1;
 
 	while (tkn[idx] != NULL)
 	{

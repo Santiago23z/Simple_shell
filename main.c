@@ -36,12 +36,13 @@ int main(void)
 		{
 			new_path = strdup(save[0]);
 			forkt(new_path, save);
+            free(save[0]);
 		}
 		else
 		{
 			new_path = path_ruta(save);
 			if (new_path != NULL)
-				forkt(new_path, save);
+			forkt(new_path, save);
 		}
 	}
 	return (0);
