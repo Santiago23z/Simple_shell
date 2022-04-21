@@ -23,7 +23,7 @@ int forkt(char *path, char **opcion)
 	else
 	{
 		wait (&status);
-		free(opcion);
+		libres_tkn(opcion);
 		free(path);
 	}
 	return (1);
