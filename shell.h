@@ -30,6 +30,8 @@ int strlen_(char *str);
 int strcmmp_(char *str1, char *str2);
 char *_stdup(char *s);
 char *_strcat(char *dest, char *src);
+/*char *strncmp(char *s1, char *s2, size_t n);*/
+/*char *strcpy(char *destino, char *source);*/
 int shel_exit(void);
 int builtins(char **listbuiltin);
 int shell_enviroment(void);
