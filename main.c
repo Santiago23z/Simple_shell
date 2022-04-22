@@ -6,6 +6,7 @@
 int main(void)
 {
 	char *line = NULL, *new_path = NULL, **save = NULL;
+    int i = 0;
 	int (*function)() = 0;
 	struct stat bm;
 
@@ -24,6 +25,10 @@ int main(void)
 		function = get_shell_function(save[0]);
 		if (function != NULL)
 		{
+            for (; save[i]; i++)
+            {
+                free(save[i]);
+            }
 			free(save);
 			if (function() == 1)
 			{
