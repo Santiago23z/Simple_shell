@@ -10,8 +10,6 @@
 #include <sys/wait.h>
 #include <limits.h>
 
-#define BUFF_sz 1024
-#define delim " \t\n"
 
 extern char **environ;
 
