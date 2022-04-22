@@ -20,7 +20,7 @@ char *prompt(void)
 	if (index == -1)
 	{
 		free(l);
-		return (NULL);
+		exit(EXIT_SUCCESS);
 	}
 	return (l);
 }
