@@ -19,7 +19,6 @@ int main(void)
 		save = tkn(line, " \n\t");
 		if (save == NULL)
 		{
-            /*free(line);*/
 			continue;
 		}
 		function = get_shell_function(save[0]);
@@ -28,6 +27,7 @@ int main(void)
 			free(save);
 			if (function() == 1)
 			{
+                free(line);
 				exit(EXIT_SUCCESS);
 			}
 			continue;
@@ -52,7 +52,6 @@ int main(void)
         forkt(new_path, save);
         }
         free(line);
-        free(save);
 	}
 	return (0);
 }
