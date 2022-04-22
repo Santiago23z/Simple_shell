@@ -26,7 +26,6 @@ int main(void)
 		if (function != NULL)
 		{
 			free(save);
-            free(line);
 			if (function() == 1)
 			{
 				exit(EXIT_SUCCESS);
